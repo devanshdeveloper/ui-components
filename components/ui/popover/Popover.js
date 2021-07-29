@@ -17,7 +17,7 @@ function Popover(props) {
   }
   return (
     <div className={checkTheme(props.theme)}>
-      <p className={s.popoverBody}>{props.popBody}</p>
+      <p className={s.popoverBody}>{props.body}</p>
       {props.closeEvent !== undefined ? (
         <button className={s.popoverBtn} onClick={props.closeEvent}>
           <CloseSvg stroke="#ffffff" />
