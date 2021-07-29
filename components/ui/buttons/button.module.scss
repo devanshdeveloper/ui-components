@@ -1,0 +1,152 @@
+// button primary states
+
+.btn {
+    background: #5f2eea;
+    border-radius: 40px;
+    color: white;
+
+    &:hover:enabled {
+        background: #2a00a2;
+        filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.06));
+    }
+    
+    &:focus {
+        box-shadow: 0 0 0 5px rgba(222, 211, 255,0.2);
+    }
+}
+
+// button sizes
+
+.sm {
+    width: 120px;
+    font-size: 0.9rem;
+    height: 40px;
+}
+
+.md {
+    width: 200px;
+    font-size: 1rem;
+    height: 56px;
+}
+
+.lg {
+    width: 200px;
+    height: 64px;
+    font-size: 1.2rem;
+}
+
+// button primary 
+
+.btnSm{
+    @extend .btn;
+    @extend .sm;
+}
+
+.btnMd{
+    @extend .btn;
+    @extend .md;
+}
+
+.btnLg{
+    @extend .btn;
+    @extend .lg;
+}
+
+// button Secondary 
+
+.btnSec{
+    border: 2px solid #5f2eea;
+    border-radius: 40px;
+    color: #5f2eea;
+    background: transparent;
+
+    &:hover:enabled {
+        border: 2px solid #2a00a2;
+        color: #2a00a2;
+        filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.06));
+    }
+    
+    &:focus {
+        box-shadow: 0 0 0 5px rgba(222, 211, 255,0.2);
+    }
+}
+
+
+.btnSecSm{
+    @extend .btnSec;
+    @extend .sm;
+}
+
+.btnSecMd{
+    @extend .btnSec;
+    @extend .md;
+}
+
+.btnSecLg{
+    @extend .btnSec;
+    @extend .lg;
+}
+
+// button Subtitle
+
+.btnSub{
+    border: 2px solid #D6D8E7;
+    border-radius: 40px;
+    color: #5f2eea;
+    background: transparent;
+    
+    &:hover:enabled {
+        color: #2a00a2;
+        filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.06));
+    }
+    
+    &:focus {
+        box-shadow: 0 0 0 5px rgba(222, 211, 255,0.2);
+    }
+}
+
+.btnSubSm{
+    @extend .btnSub;
+    @extend .sm;
+}
+
+.btnSubMd{
+    @extend .btnSub;
+    @extend .md;
+}
+
+.btnSubLg{
+    @extend .btnSub;
+    @extend .lg;
+}
+
+// button Text
+
+.btnText{
+    color: #5f2eea;
+    background: transparent;
+    
+    &:hover:enabled {
+        color: #2a00a2;
+        filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.06));
+    }
+    
+    &:focus {
+        box-shadow: 0 0 0 5px rgba(222, 211, 255,0.2);
+    }
+}
+
+.btnTextSm{
+    @extend .btnText;
+    @extend .sm;
+}
+
+.btnTextMd{
+    @extend .btnText;
+    @extend .md;
+}
+
+.btnTextLg{
+    @extend .btnText;
+    @extend .lg;
+}

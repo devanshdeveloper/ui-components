@@ -1,0 +1,14 @@
+.uiComp {
+    height: 50vh;
+    width: 49vw;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+    .uiComp {
+        width: 100vw;
+    }
+}

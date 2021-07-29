@@ -1,0 +1,62 @@
+.popoverDiv {
+    height: 72px;
+    width: 375px;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    animation: bottomToTop 0.5s ease-in-out;
+}
+
+.popoverBody {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 32px;
+    letter-spacing: 0.75px;
+    color: #fcfcfc;
+}
+
+.popoverBtn {
+    position : relative;
+    left: 100px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popoverError {
+    @extend .popoverDiv;
+    background-color: #ed2e7e;
+}
+.popoverSuccess {
+    @extend .popoverDiv;
+    background: #00BA88;
+}
+.popover {
+    @extend .popoverDiv;
+    background: #5F2EEA;
+}
+
+@media screen and (max-width: 500px) {
+  .popoverDiv{
+    height: 60px;
+    width: 85vw;
+    left: unset;
+    margin: 0 7vw;
+  }
+  .popoverBtn{
+    left: calc(60px);
+  }
+}
+@keyframes bottomToTop {
+    from {
+       bottom : -100px;
+    }
+    to {
+        bottom: 20px;
+    }
+}
