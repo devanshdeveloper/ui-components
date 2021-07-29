@@ -65,7 +65,7 @@ function HomePage() {
       ) : null}
       {togglePopover ? (
         <Popover
-          popBody={"got success"}
+          body={"got success"}
           theme="success" // "error" or let it undefined for general theme
           closeEvent={() => setTogglePopover(false)}
         ></Popover>
