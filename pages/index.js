@@ -1,6 +1,7 @@
 import Ui from "../components/other/Ui";
 import btn from "../components/ui/buttons/button.module.scss";
 import Modal from "../components/ui/modal/Modal";
+import Head from "next/head";
 import { useState } from "react";
 import Popover from "../components/ui/popover/Popover";
 
@@ -10,12 +11,19 @@ function HomePage() {
 
   return (
     <>
+      <Head>
+        <title>UI Components | devansh.developer</title>
+      </Head>
       <div className="container">
         <Ui>
-          <button className={btn.btnSm} onClick={() =>setToggleModal(true)}>Modal</button>
+          <button className={btn.btnSm} onClick={() => setToggleModal(true)}>
+            Modal
+          </button>
         </Ui>
         <Ui>
-          <button className={btn.btnMd} onClick={() =>setTogglePopover(true)}>Alert</button>
+          <button className={btn.btnMd} onClick={() => setTogglePopover(true)}>
+            Alert
+          </button>
         </Ui>
         <Ui>
           <button className={btn.btnLg}>Button</button>
@@ -52,13 +60,14 @@ function HomePage() {
         <Modal
           title={"Welcome to Productivefy"}
           body={"Explore our Freatures"}
-          closeEvent={() =>setToggleModal(false)}  
+          closeEvent={() => setToggleModal(false)}
         ></Modal>
       ) : null}
       {togglePopover ? (
         <Popover
-          popBody={"error ocured"}
-          closeEvent={() =>setTogglePopover(false)}
+          popBody={"got success"}
+          theme="success" // "error" or let it undefined for general theme
+          closeEvent={() => setTogglePopover(false)}
         ></Popover>
       ) : null}
     </>
