@@ -1,0 +1,21 @@
+.btn {
+    height: 32px;
+    width: 32px;
+    background-color: #eff0f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    &:hover {
+        border: 2px solid rgba(214, 216, 231, 0.5);
+    }
+
+    &:active {
+        border: 2px solid #5f2eea;
+    }
+}
+
+.icon:focus{
+    stroke: #5f2eea;
+}

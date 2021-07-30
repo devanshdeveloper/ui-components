@@ -60,6 +60,7 @@ function HomePage() {
           <Note
             title="hello note"
             body="Hello World Hello Word Hello World Hello"
+            isPinned={true}
           />
         </Ui>
       </div>
