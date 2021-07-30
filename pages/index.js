@@ -4,6 +4,7 @@ import Modal from "../components/ui/modal/Modal";
 import Head from "next/head";
 import { useState } from "react";
 import Popover from "../components/ui/popover/Popover";
+import Note from "../components/note/Note";
 
 function HomePage() {
   const [toggleModal, setToggleModal] = useState(false);
@@ -54,6 +55,12 @@ function HomePage() {
         </Ui>
         <Ui>
           <button className={btn.btnTextLg}>Button</button>
+        </Ui>
+        <Ui>
+          <Note
+            title="hello note"
+            body="Hello World Hello Word Hello World Hello"
+          />
         </Ui>
       </div>
       {toggleModal ? (

@@ -5,9 +5,13 @@
   padding: 0;
   user-select: none;
   box-sizing: border-box;
-  transition: all 0.25s;
+  transition: all 0.5s;
   -webkit-tap-highlight-color: transparent;
   font-family: "poppins";
+}
+
+body{
+  background-color: #F7F7FC;
 }
 
 *:focus {
@@ -30,7 +34,8 @@ button {
 }
 
 .fadeOut {
-  background: rgba(94, 66, 66, 0.5);
+  background: rgba(0 , 0, 0, 0.4);
+  backdrop-filter: blur(5px);
 }
 
 .full {
@@ -55,6 +60,7 @@ button {
   @extend .center;
   @extend .full;
   @extend .fadeOut;
+  transition: all 0.5s;
 }
 
 @media screen and (max-width: 650px) {
