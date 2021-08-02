@@ -5,6 +5,7 @@ import Head from "next/head";
 import { useState } from "react";
 import Popover from "../components/ui/popover/Popover";
 import Note from "../components/note/Note";
+import DadJokes from "../components/ui/Boxes/DadJokes";
 
 function HomePage() {
   const [toggleModal, setToggleModal] = useState(false);
@@ -62,6 +63,9 @@ function HomePage() {
             body="Hello World Hello Word Hello World Hello"
             isPinned={true}
           />
+        </Ui>
+        <Ui>
+         <DadJokes></DadJokes>
         </Ui>
       </div>
       {toggleModal ? (
