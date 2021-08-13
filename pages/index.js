@@ -5,7 +5,6 @@ import Head from "next/head";
 import { useState } from "react";
 import Popover from "../components/ui/popover/Popover";
 import Note from "../components/note/Note";
-import DadJokes from "../components/ui/Boxes/DadJokes";
 
 function HomePage() {
   const [toggleModal, setToggleModal] = useState(false);
@@ -65,7 +64,6 @@ function HomePage() {
           />
         </Ui>
         <Ui>
-         <DadJokes></DadJokes>
         </Ui>
       </div>
       {toggleModal ? (

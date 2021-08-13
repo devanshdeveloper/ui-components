@@ -15,6 +15,7 @@ function Popover(props) {
         break;
     }
   }
+
   return (
     <div className={checkTheme(props.theme)}>
       <p className={s.popoverBody}>{props.body}</p>
